@@ -4,9 +4,18 @@ import datetime
 import pandas as pd
 import lxml
 from bs4 import BeautifulSoup
+import path
 
 from src.constants import STR_RSS_URL
 
+
+def check_path_valid(path: str) -> bool:
+    """
+    check whether the given path is valid or invalid
+    condition: check the given path
+    :param path:
+    :return:
+    """
 
 def get_rss_xml(id: str) -> pd.DataFrame:
     """
